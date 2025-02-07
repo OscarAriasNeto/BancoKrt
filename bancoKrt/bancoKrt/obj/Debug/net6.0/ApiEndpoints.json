@@ -1,0 +1,112 @@
+[
+  {
+    "ContainingType": "CrudDynamoDB.Controllers.UsuarioController",
+    "Method": "AdicionarUsuario",
+    "RelativePath": "api/usuarios",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuario",
+        "Type": "bancoKrt.Usuario",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CrudDynamoDB.Controllers.UsuarioController",
+    "Method": "DeletarUsuario",
+    "RelativePath": "api/usuarios/{documento}/{agencia}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "documento",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "agencia",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CrudDynamoDB.Controllers.UsuarioController",
+    "Method": "BuscarLimite",
+    "RelativePath": "api/usuarios/{documento}/{agencia}/limite",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "documento",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "agencia",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CrudDynamoDB.Controllers.UsuarioController",
+    "Method": "AlterarLimite",
+    "RelativePath": "api/usuarios/{documento}/{agencia}/limite",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "documento",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "agencia",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "novoLimite",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CrudDynamoDB.Controllers.UsuarioController",
+    "Method": "RealizarTransacao",
+    "RelativePath": "api/usuarios/{documento}/{agencia}/transacao",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "documento",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "agencia",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "valorTransacao",
+        "Type": "System.Decimal",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
